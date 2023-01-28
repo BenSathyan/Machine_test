@@ -27,7 +27,7 @@ class LiftController extends ChangeNotifier {
     if (isStarted == false) {
       liftModel[floorIndex].isSelectedFloor = true;
       notifyListeners();
-      await Future.delayed(const Duration(seconds: 3));
+      await Future.delayed(const Duration(seconds: 1));
       changeFloorNumber(selectedFloor: floorIndex);
     }
   }
